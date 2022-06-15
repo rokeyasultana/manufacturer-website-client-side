@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-         <div className='mt-5 mb-5 items-center  space-y-2 justify-items-center grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2'>
+         <div className='mt-5 mb-5 items-center  justify-items-center grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 ml-4  space-y-2'>
 
 <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
   <div class="collapse-title text-xl font-medium">
@@ -12,7 +12,7 @@ const Blogs = () => {
   <p>There are different ways to improve performance of a React Application.
       Here are ways: </p><br></br>
 
-    <p>* Most performance-associated problems in cell apps have a tendency to be taken care of out implementing little bit changes and smaller modifications, however those modifications are sufficient succesful to make your app more faster the end result.<br></br>
+    <p>* Most performance-associated problems in cell apps have a tendency to be taken care of out implementing little bit changes and smaller modifications, however those modifications are sufficient successful to make your app more faster the end result.<br></br>
 
 * you want to ensure that components   get hold of best important props. It will permit you to manage the CPU intake and keep away from unnecessary over-rendering  features. The answer is to create a useful factor with the intention to acquire all props and redistribute them to different additives.</p>
   </div>
