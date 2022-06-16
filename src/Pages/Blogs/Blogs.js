@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-         <div className='mt-5 mb-5 items-center  justify-items-center grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 ml-4  space-y-2'>
+         <div className='mt-5 mb-5 items-center  justify-items-center grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 ml-4   space-y-2'>
 
 <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
   <div class="collapse-title text-xl font-medium">

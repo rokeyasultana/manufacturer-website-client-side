@@ -14,7 +14,7 @@ const BusinessSummary = () => {
 
 <div
 style={{
-    background: `url(https://img.freepik.com/free-vector/halftone-dots-white-background-gray-dots-halftone-texture_47243-1127.jpg?w=2000)`,
+    background: `url()`,
    
 }} 
 
@@ -44,7 +44,7 @@ style={{
   <div class="card-body">
   
   <FontAwesomeIcon icon={faStarHalf} size="6x" />
-    <h2 class="card-title">Review</h2>
+    <h2 class="card-title">Reviews</h2>
    <h1 className='text-center text-white font-bold text-5xl'>12K+</h1>
    
     
