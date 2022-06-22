@@ -4,6 +4,8 @@ import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfil
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import useToken from '../../Hooks/useToken';
+
 const SignUp = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -16,6 +18,7 @@ const SignUp = () => {
 
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
    
+const [token] =useToken(user || gUser);
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -27,15 +30,22 @@ const SignUp = () => {
         return <Loading></Loading>
     }
 
+    if(token){
+
+    navigate('/');
+
+    
+    }
+
     if (error || gError || updateError) {
         signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
     }
-
+    
     
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
-       
+       navigate('/');
 
     }
     return (
